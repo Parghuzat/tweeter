@@ -1,0 +1,26 @@
+
+form{
+  width: 100%;
+}
+
+#tweet-text{
+  border: none;
+  border-bottom: 3px solid black;
+  outline: none;
+  resize: none;
+  background-color: #f4f1ec;
+  width: 100%;
+}
+
+.tweet-func{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+}
+
+.tweet{
+  color: white;
+  background-color:#4056A1;
+  border-radius: 5px;
+}
+
