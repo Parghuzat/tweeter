@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -33,51 +34,37 @@
         <div class="arrow"><i class="fa">&#xf103;</i></div>
       </div>
     </nav>
+    <div class="pcview">
+      <header class="pageheader">
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div> 
+            <h2>Parghuzat</h2>
+        </div>
+      </header>
 
-    <header class="pageheader">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div> 
-          <h2>Parghuzat</h2>
-      </div>
-    </header>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <p id="errormsg"> </p>
+          <form id="addtweet">
+            <label for="tweet-text">What are you humming about?</label>
+            <br>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div class="tweet-func">
+              <button id="submitbtn" class="tweet" type="submit" method="post" action="/tweets/">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+      
+        </section>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form>
-          <label for="tweet-text">What are you humming about?</label>
-          <br>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div class="tweet-func">
-            <button class="tweet" type="submit" method="post" action="/tweets/">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-
-      <section class="tweets">
-        <article>
-          <header>
-            <span>PPZ</span>
-            <span>@Parghuzat</span>
-          </header>
-          <div class="tweetcontent">
-              This is my first tweet!
-          </div>
-          <footer>
-            <span>10 days ago</span>
-            <span>
-              <i class="fa">&#xf024;</i>
-              <i class="fa">&#xf079;</i>
-              <i class="fa">&#xf004;</i>
-            </span>
-
-          </footer>
-        </article>
-      </section>
-    </main>
+        <section id="tweets">
+          
+        </section>
+      </main>
+    </div>
   </body>
 </html>

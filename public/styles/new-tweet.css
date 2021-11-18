@@ -24,3 +24,12 @@ form{
   border-radius: 5px;
 }
 
+.avatar {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.usericon {
+  display: flex;
+  align-items: center;
+}

@@ -37,7 +37,7 @@ article{
   margin: 50px 0;
   padding: 10px;
 }
- .tweets header{
+ #tweets header{
    display: flex;
    justify-content: space-between;
  }
@@ -48,18 +48,41 @@ article{
    padding: 15px;
  }
 
- .tweets footer{
+ #tweets footer{
    display: flex;
    font-size: 16px;
    justify-content: space-between;
    padding: 10px;
  }
 
- .tweets:hover{
+ #tweets article:hover{
    box-shadow:5px 3px rgb(126, 124, 124);
 
  }
 
  i:hover{
    color: red;
+ }
+
+ #errormsg{
+   align-items: center;
+   text-align: center;
+   color: red;
+   border: 3px solid red;
+  
+ }
+
+ @media only screen and (min-width: 960px) {
+  
+  .pcview {
+    display: flex;
+    margin: 120px 50px;
+  }
+  
+  .pageheader {
+    margin-right: 120px; 
+    flex: 1;
+  }
+
+
  }
